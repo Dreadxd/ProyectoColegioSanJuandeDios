@@ -61,7 +61,7 @@ public class DAOGestionarMatricula extends Conexion {
 			ArrayList<BeanMatricula> listaMatriculas = new ArrayList<BeanMatricula>();
 			PreparedStatement ps = null;
 	        Connection con = getConexion();
-			String sql = "SELECT * FROM matricula where estado=1;";
+			String sql = "SELECT * FROM matricula where estado=1";
 			rs=st.executeQuery(sql);
 			ps = con.prepareStatement(sql);
 	 
